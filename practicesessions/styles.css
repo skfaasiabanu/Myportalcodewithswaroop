@@ -3,7 +3,7 @@
 }
 body{
     margin:0;
-    background-color: lightskyblueS;
+    background-color: rgb(243, 247, 249);
     font-size: 20px;
 }
 header{
@@ -14,22 +14,24 @@ header{
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 h1{
     font-size:50px;
     color:lightskyblue;
 }
 header h1{
+    text-align:center;
     color:white;
-    margin:0;
+
     
 }
-h1
 .button{
+margin:15px;
 height:40px;
 width:140px;
 border: none;
-border-radius: 10px;
+border-radius:20px;
 cursor:pointer;
 }
 .button:hover{
@@ -46,17 +48,25 @@ section{
     height: 100vh;
     border: 1px solid gray;
     border-radius: 20px;
+    padding:7px;
     margin-bottom:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+form div{
+    margin:5px 0px; 
 }
 .submit{
     
     height:40px;
-width:140px;
-border: none;
-border-radius: 10px;
-cursor:pointer;
-color:white;
-background-color:#2196F3 ;
+    width:140px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    color:white;
+    background-color:#2196F3 ;
 }
 .submit:hover{
 
@@ -83,4 +93,8 @@ footer{
     height: 124px;
     background-color: black;
     color:lightgray;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
