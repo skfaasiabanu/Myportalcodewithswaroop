@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes identifier {
+         0%{
+            transform:translateY(0);
+         }
+         20%{
+            transform:translateY(100vh);
+         }
+        50%{
+            transform:translateY(0);
+         }
+         70%{
+            transform:translateY(100vh);
+         }
+         80%{
+            transform:translateY(70vh);
+         }
+         85%{
+            transform:translateY(100vh);
+         }
+         95%{
+            transform:translateY(95vh);
+         }
+         98%{
+            transform:translateY(100vh);
+         }
+         99%{
+            transform:translateY(98vh);
+         }
+         100%{
+            transform:translateY(100vh);
+         }
+        }
+        button{
+            height:100px;
+            width:100px;
+            border-radius: 50%;
+            background-color:aqua;
+            transition:all 2s linear 1s;
+            animation:identifier 2s ease 0s infinite;
+        }
+        button:hover{
+         background-color: blue;  
+         color:white;   
+        }
+    </style>
+</head>
+<body>
+    <button>transition button</button>
+</body>
+</html>
