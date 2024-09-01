@@ -32,11 +32,13 @@ height:40px;
 width:140px;
 border: none;
 border-radius:20px;
+transition:all 3s linear 0s;
 cursor:pointer;
 }
 .button:hover{
     color:white;
     background-color: darkblue;
+    transform:rotateX(360deg);
 }
 img{
     height:200px
