@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    .green{
+       color:green;
+       font-size:50px;
+    }
+    </style>
 </head>
 <body>
     <h1 id="head">hello this is my website</h1>
-    <img  id="head" src="" alt="hello">
+    <img  src="" alt="hello">
     <script>
         var head=document.getElementById("head");
         //head.textContent="hi";
         //head.setAttribute("alt","this is my image");
         head.style.color="red";
+        var para=document.createElement("p");
+        document.body.appendChild(para);
+        para.innerHTML="this is paragraph";
+        para.style.color="blue";
+        //var hire=document.getElementById("head");
+        //hire.body.removeChild(hire);
+
+        para.addEventListener("mouseover",function(){
+            //para.style.color="red";
+            para.classList.add("green");
+        })
+        para.parentElement.removeChild(head);
     </script>
 </body>
 </html>
