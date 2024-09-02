@@ -22,13 +22,16 @@
         var para=document.createElement("p");
         document.body.appendChild(para);
         para.innerHTML="this is paragraph";
-        para.style.color="blue";
+        //para.style.color="blue";
         //var hire=document.getElementById("head");
         //hire.body.removeChild(hire);
 
         para.addEventListener("mouseover",function(){
-            //para.style.color="red";
             para.classList.add("green");
+        })
+        para.addEventListener("mouseout",function(){
+            para.classList.remove("green");
+            para.style.color="blue";
         })
         para.parentElement.removeChild(head);
     </script>
